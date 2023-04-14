@@ -1,0 +1,5 @@
+sample_file_name,sample_name,description,platform
+exp1_sample1_rep1,s1_rep1,condition1_rep1,ONT_SQK-LSK114
+exp1_sample1_rep2,s1_rep2,condition1_rep2,ONT_SQK-LSK114
+exp1_sample2_rep1,s2_rep1,condition2_rep1,ONT_SQK-LSK114
+exp1_sample2_rep2,s2_rep2,condition2_rep2,ONT_SQK-LSK114

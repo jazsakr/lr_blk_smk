@@ -1,0 +1,38 @@
+sample:
+  fastq: fastqs/{exp}/{sample}.fastq.gz
+  sam: data/{exp}/mapped/{sample}.sam
+  bam: data/{exp}/mapped/{sample}.bam
+  sam_reverse: data/{exp}/mapped/{sample}r.sam
+  clean: data/{exp}/processed/{sample}r_clean.sam
+  labeled: data/{exp}/processed/{sample}r_labeled.sam
+
+reference:
+  mouse:
+    fa: references/mm10_M21-encode_lr.fa
+    fa_name: mm10_M21
+    gtf: references/mm10_M21-gencode-primary_assembly.gtf
+    gtf_name: gencode_M21
+    bed: references/mm10_M21-gencode-primary_assembly.bed
+    sj: references/mm10_M21-encode_lr_sj.tsv
+
+packages:
+  transcriptclean: packages/TranscriptClean
+  talon: packages/TALON
+
+talon:
+  talon_config: data/talon/{exp}_talon_config.csv
+  talon_db: data/talon/{exp}_talon.db
+  talon_read_annot: data/talon/{exp}_talon_read_annot.tsv
+  talon_ab: data/talon/{exp}_talon_abundance.tsv
+  talon_ab_f: data/talon/{exp}_talon_abundance_filtered.tsv
+  talon_ab_f_tpm: data/talon/{exp}_talon_abundance_filtered_tpm.tsv
+  talon_list: data/talon/{exp}_talon-list.csv
+  talon_gtf: data/talon/{exp}_talon.gtf
+
+stats:
+  map:
+    stats: data/{exp}/reports/{sample}_mp_stats.txt
+    sn: data/{exp}/reports/{sample}_mp_stats-sn.txt
+  tc:
+    stats: data/{exp}/reports/{sample}r_tc_stats.txt
+    sn: data/{exp}/reports/{sample}r_tc_stats-sn.txt
