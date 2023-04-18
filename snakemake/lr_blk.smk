@@ -98,7 +98,6 @@ rule transcriptclean:
 		--sam {input.sam_reverse} \
 		--genome {input.ref_fa} \
 		--spliceJns {input.ref_sj} \
-		--correctMismatches False \
 		--canonOnly \
 		--primaryOnly \
 		--deleteTmp \
